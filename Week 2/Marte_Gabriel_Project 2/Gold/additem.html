@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+			<meta name="description" content="New Contact loader"/>
+			<meta name="keywords" content="html5, friends, personal, work, contacts"/>
+			<meta name="robots" content="index, follow" />
+			<meta name="viewport" content="user-scalable=no, width=device-width"/>
+			<!-- DROID -->
+			<meta name="viewport" content="target-densitydpi=device-dpi"/>
+			<meta name="HandheldFriendly" content="true"/>
+			<meta name="MobileOptimizer" content="320"/>
+		<title>Contact Loader</title>
+		<link href="css/form.css" rel="stylesheet" type=""/>
+	</head>
+	<body>
+		<h1>Contact Loader</h1>
+		<nav>
+			<a href="#" id="clear">Clear Stored Data</a>
+			<a href="#" id="displayLink">Load Data</a>
+			<a href="additem.html" id="addItem" style="display:none;">Add new profile</a>
+		</nav>
+		<form action="#" method="post" id="contactForm">
+			<fieldset>
+				<legend>Upload a Contact</legend>
+				<span>* Fields required.</span>
+				<ul id="errors"></ul>
+				<ul id="info">
+					<li id="select"><label for="group">Select new group:</label><br /></li>
+					<li><label for="fname">First Name </label><input type="text" id="fname"/></li> 
+					<li><label for="lname">Last Name </label><input type="text" id="lname"/></li> 
+					<li><label for="pnum">Phone Number </label><input type="text" id="pnum"/></li> 
+					<li><label for="email">Email address: </label><input type="email" id="email"/></li>
+					<li>VIP Status?
+						<ul>
+							<li><input type="checkbox" value="" id="vip"><label for="vipContact">"This person is a VIP."</label></li> 
+						</ul>
+					</li>
+					<li>Tell us about this person
+						<p>Sex</p>
+							<ul>
+								<li><input type="radio" value="Male" id="male" name="sex"/><label for="male">Male</label></li> 
+								<li><input type="radio" value="Female" id="female" name="sex"/><label for="female">Female</label></li>
+							</ul>
+					</li>
+					<li>
+						<label for="bday">Birthday: </label><input type="text" id="bday"/>
+					</li> 
+					<li>
+						<label for="frLevel">Friend Level </label>
+						<select id="frLevel">
+							<option value="pCon">This person is like blood.</option>
+							<option value="wCon">I them 9-5</option>
+							<option value="aCon">An acquaintance I just met</option>
+						</select>
+					</li>
+					<li><label for="comments">Anything to remember about this contact? </label><textarea id="comments"></textarea> </li>
+				</ul>
+			</fieldset>
+			<input type="button" value="Load My Contact!" id="submit"/><br />
+		</form>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/json.js"></script>
+	</body>
+</html>

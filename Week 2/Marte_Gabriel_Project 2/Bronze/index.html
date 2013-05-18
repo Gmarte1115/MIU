@@ -1,0 +1,471 @@
+<!doctype html>
+<!Gabriel Marte> 
+<!Mobile interfaces and Usability>
+<!Section 1305>  
+<!Project 1> 
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Black Belt Loader App</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>	
+	<div data-role="page" id="home">
+		<div data-role="header" data-position="fixed">
+			<h1>Black Belt Loader</h1>
+		</div>
+		<div>
+			<center><img src="images/BBcta.jpg"></center>
+		</div>
+		<div data-role="content">
+			<div>
+				<ul data-role="listview" data-inset="true">					
+					<li>
+						<a href="additem.html" >
+						<h3>Add New Black Belt!</h3>
+						</a>
+					</li>
+				</ul>
+			</div>	
+			<div>
+				<ul data-role="listview" data-inset="true">
+					<li>
+						<a href="#topRank">
+							<img src="images/helio.png">
+							<h3>Top Rank Black Belts</h3>
+							<p>The top black belts in BJJ, Muay Thai, Capoeira and Sambo</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ui-grid-a">	
+				<div class="ui-block-a">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">
+							<a href="#topBjj">
+								<img src="images/buchecha.png" width="60" height="60">
+								<h3>Brazilian Jiu Jitsu Black Belts</h3>
+								<p>All the best players from the Mundials!</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="ui-block-b">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">
+							<a href="#topMt">
+							<img src="images/joseAldo.png" width="60" height="60">
+								<h3>Brazilian Muay Thai Black Belts</h3>
+								<p>Leg kicks that can chop down trees!</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="ui-grid-a">	
+				<div class="ui-block-a">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">
+							<a href="#topCapo">
+							<img src="images/eddyG.png" width="60" height="60">
+								<h3>Capoeira Black Belts</h3>
+								<p>Looks like dancing but watch out for those moves!</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="ui-block-b">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">
+							<a href="#topSambo">
+							<img src="images/fedor.png" width="60" height="60">
+								<h3>Sambo Black Belts</h3>
+								<p>The closest thing to brutal combat outside the octagon!</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#newsFeed" data-icon="bars">News Feed</a></li>
+						<li><a href="#info" data-icon="star">Info</a></li>
+						<li><a href="#home" data-icon="search">Home</a></li>
+					</ul>
+				</div>
+		</div>	
+	</div>
+<!-- Top ranked black belts main page	 -->
+	<div data-role="page" id="topRank" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>Top Rank Black Belts</h1>
+		</div>
+		
+		<div data-role="content" >
+			<div>
+				<p>Here are your top Black Belts</p>
+				<div data-role="collapsible" data-theme="b">	
+					<h3>Marcus "Buchecha" Almeida</h3> 
+					<li>BJJ Black Belt</li>
+					<li>Open weight champion</li>
+					<li>Nearly submited Roger Gracie</li>
+				</div>
+				
+				<div data-role="collapsible" data-theme="b">	
+					<h3>Jose Aldo</h3> 
+					<li>Brazilian Muay Thai Faixa Preta (Black Belt)</li>
+					<li>UFC Champion</li>
+					<li>Devastating leg kicks</li>
+				</div>
+				
+				<div data-role="collapsible" data-theme="b">	
+					<h3>Eddie Gordo</h3> 
+					<li>Capoeira Master black sash</li>
+					<li>Featured in the video game Tekken</li>
+				</div>
+				
+				<div data-role="collapsible" data-theme="b">	
+					<h3>Fedor Emilianenko</h3> 
+					<li>Combat Sambo Champion Black Belt</li>
+					<li>One of the most feared men in combat sports</li>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="topRank">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#topRank" data-icon="star" class="ui-btn-active">Top 5</a></li>
+						<li><a href="#bbList" data-icon="bars">Full List</a></li>
+						<li><a href="#home" data-icon="search">Home</a></li>
+					</ul>
+				</div>
+		</div>
+	</div>
+	<!-- top rank Black Belts list	 -->
+	<div data-role="page" id="bbList" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+				<h1>Top Rank Black Belts</h1>
+		</div>
+			
+		<div data-role="content">
+			<p>List of all Black Belts</p>
+		</div>
+		<div data-role="footer">
+			<h4></h4>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="topRank">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#topRank" data-icon="star">Top 5</a></li>
+					<li><a href="#bbList" data-icon="bars" class="ui-btn-active">Full List</a></li>
+					<li><a href="#home" data-icon="search">Home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- Top bjj black belts	 -->
+	<div data-role="page" id="topBjj" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>BJJ Black Belts</h1>
+		</div>
+		
+		<div data-role="content" >
+			<div>
+				<p>Here are your top BJJ Black Belts</p>
+				<div data-role="collapsible" data-theme="b">	
+					<h3>Marcus "Buchecha" Almeida</h3> 
+					<li>Team Checkmat Black Belt</li>
+					<li>Open weight champion</li>
+					<li>Nearly submited Roger Gracie</li>
+				</div>
+				
+				<div data-role="collapsible" data-theme="b">	
+					<h3>Marcelo Garcia</h3> 
+					<li>5x ibjjf world champion</li>
+					<li>4x Abu Dhabi champion</li>
+					<li>Regarded by many the best grappler alive today</li>
+				</div>
+				
+				<div data-role="collapsible" data-theme="b">	
+					<h3>Andre Galvao</h3> 
+					<li>Team Atos head instructor</li>
+					<li>Mendes brothers under them</li>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div data-role="footer" data-position="fixed" data-id="topBjj">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#topBjj" data-icon="star" class="ui-btn-active">Top 5</a></li>
+						<li><a href="#bjjList" data-icon="bars">Full List</a></li>
+						<li><a href="#home" data-icon="search">Home</a></li>
+					</ul>
+				</div>
+		</div>
+	</div>
+	<!--  top bjj Black belts full list	 -->
+	<div data-role="page" id="bjjList" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+				<h1>Bjj Black Belts</h1>
+		</div>
+			
+		<div data-role="content">
+			<p>List of all Black Belts</p>
+		</div>
+		<div data-role="footer">
+			<h4></h4>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="topBjj">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#topBjj" data-icon="star">Top 5</a></li>
+					<li><a href="#bjjList" data-icon="bars" class="ui-btn-active">Full List</a></li>
+					<li><a href="#home" data-icon="search">Home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+<!-- Top Muay Thai black belts	 -->
+	<div data-role="page" id="topMt" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>Muay Thai Black Belts</h1>
+		</div>
+		
+		<div data-role="content">
+			<div>
+				<p>Here are your top Muay Thai Faixa Preta (Black Belts)</p>
+				<div data-role="collapsible" data-theme="b">	
+					<h3>Jose Aldo</h3> 
+					<li>UFC champion</li>
+					<li>Known for the fastest leg kicks in UFC</li>
+					<li>Loves to surf</li>
+				</div>
+				
+				<div data-role="collapsible" data-theme="b">	
+					<h3>Buakaw Por pramuk</h3> 
+					<li>Multiple time Lumpinee champion</li>
+					<li>over 250 full rules fights</li>
+					<li>Wears pink gloves</li>
+				</div>
+				
+				<div data-role="collapsible" data-theme="b">	
+					<h3>Ramon Dekkers</h3> 
+					<li>First non thai fighter to win lumpinee fighter of the year</li>
+					<li>Dutch style boxing</li>
+					<li>Recently passed away during motorcycle accident</li>
+				</div>
+			</div>
+		</div>
+		
+		<div data-role="footer" data-position="fixed" data-id="topMt">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#topMt" data-icon="star" class="ui-btn-active">Top 5</a></li>
+					<li><a href="#mtList" data-icon="bars" >Full List</a></li>
+					<li><a href="#home" data-icon="search">Home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		<!--  top MT Black belts list	 -->
+	<div data-role="page" id="mtList" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+				<h1>Muay Thai Black Belts</h1>
+		</div>
+			
+		<div data-role="content">
+			<p>List of all Black Belts</p>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="topMt">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#topMt" data-icon="star">Top 5</a></li>
+					<li><a href="#mtList" data-icon="bars" class="ui-btn-active">Full List</a></li>
+					<li><a href="#home" data-icon="search">Home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+<!-- Top Capoeira Black Belts	 -->
+	<div data-role="page" id="topCapo" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>Capoeira Black Belts</h1>
+		</div>
+		
+		<div data-role="content" >
+			<div>
+				<p>Here are your top Capoeira Black Sash</p>
+				<div data-role="collapsible" data-theme="b">	
+					<h3>Eddy Gordo</h3> 
+					<li>Wears geen and yellow outfit</li>
+					<li>Moves can also be used while dancing in a club</li>
+					<li>Hates Coconuts</li>
+				</div>
+				
+				<div data-role="collapsible" data-theme="b">	
+					<h3>Johny Mendes</h3> 
+					<li>67 time world champion</li>
+					<li>Coincidentally 67 time dance central champion</li>
+					<li>Has never lost a street battle. The dance kind</li>
+				</div>
+				
+				<div data-role="collapsible" data-theme="b">	
+					<h3>Silvio Dante</h3> 
+					<li>Grandmaster of Capoeira</li>
+					<li>Has awarded more black sashes than any other master</li>
+					<li>Awarded lifetime achievement award</li>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="topCapo">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#topCapo" data-icon="star" class="ui-btn-active">Top 5</a></li>
+					<li><a href="#capoList" data-icon="bars" >Full List</a></li>
+					<li><a href="#home" data-icon="search">Home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+			<!--  top Capoeira Black belts list	 -->
+	<div data-role="page" id="capoList" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+				<h1>Capoeira Black Belts</h1>
+		</div>
+		<div data-role="content">
+			<p>List of all Black Belts</p>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="topCapo">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#topCapo" data-icon="star">Top 5</a></li>
+					<li><a href="#capoList" data-icon="bars" class="ui-btn-active">Full List</a></li>
+					<li><a href="#home" data-icon="search">Home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<!-- Top Sambo Black Belts 	 -->
+	<div data-role="page" id="topSambo" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>Sambo Black Belts</h1>
+		</div>
+		
+		<div data-role="content" >
+			<div>
+				<p>Here are your top Sambo Black Belts</p>
+				<div data-role="collapsible" data-theme="b">	
+					<h3>Fedor Emilianenko</h3> 
+					<li>Most prestigious fighter who has never fought in the UFC</li>
+					<li>Multiple time PRIDE Grand Prix Champion</li>
+					<li>Trains Vladamir Putin</li>
+				</div>
+				
+				<div data-role="collapsible" data-theme="b">	
+					<h3>Andrei Arlovski</h3> 
+					<li>Former UFC champion and World Combat Sambo Champion</li>
+					<li>Nicknamed The Pitbull</li>
+					<li>Has a weak chin</li>
+				</div>
+				
+				<div data-role="collapsible" data-theme="b">	
+					<h3>Vladimir Putin</h3> 
+					<li>Master of sports in combat sambo and judo</li>
+					<li>Former KGB Colonel</li>
+					<li>Laughs in the face of danger</li>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="topSambo">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#topSambo" data-icon="star" class="ui-btn-active">Top 5</a></li>
+					<li><a href="#samboList" data-icon="bars" >Full List</a></li>
+					<li><a href="#home" data-icon="search">Home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+			<!--  top Sambo Black belts list	 -->
+	<div data-role="page" id="samboList" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+				<h1>Sambo Black Belts</h1>
+		</div>
+		<div data-role="content">
+			<p>List of all Black Belts</p>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="topSambo">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#topSambo" data-icon="star">Top 5</a></li>
+					<li><a href="#samboList" data-icon="bars" class="ui-btn-active">Full List</a></li>
+					<li><a href="#home" data-icon="search">Home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="info" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>Info Page</h1>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true">
+				<li>
+					<a href="index.html">
+						<img src="images/helio.png">
+						<h3>Gold App</h3>
+						<p>List Inlays</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#newsFeed" data-icon="bars">News Feed</a></li>
+					<li><a href="#info" data-icon="star">Info</a></li>
+					<li><a href="#home" data-icon="search">Home</a></li>
+				</ul>		
+			</div>
+		</div>	
+	</div>
+
+
+
+	
+	
+	
+
+	<!-- JavaScript under here -->
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<!---<script type="text/javascript" src="js/json.js"></script>--->
+		
+</body>
+</html>
