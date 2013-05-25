@@ -35,14 +35,14 @@
 			<center><img src="images/BBcta.jpg"></center>
 		</div>
 		<div data-role="content">
-			<div>
-				<ul data-role="listview" data-inset="true">					
-					<li>
-						<a href="additem.html" >
+			<ul data-role="listview" data-inset="true">
+				<li>
+					<a href="#addBlackbelt">
+						<img src="images/BBcta.jpg">
 						<h3>Add New Black Belt!</h3>
-						</a>
-					</li>
-				</ul>
+					</a>
+				</li>
+			</ul>
 			</div>	
 			<div>
 				<ul data-role="listview" data-inset="true">
@@ -53,55 +53,35 @@
 							<p>The top black belts in BJJ, Muay Thai, Capoeira and Sambo</p>
 						</a>
 					</li>
+					<li>
+						<a href="#topBjj">
+							<img src="images/buchecha.png">
+							<h3>Brazilian Jiu Jitsu Black Belts</h3>
+							<p>All the best players from the Mundials!</p>
+						</a>
+					</li>
+					<li>
+						<a href="#topMt">
+						<img src="images/joseAldo.png">
+							<h3>Brazilian Muay Thai Black Belts</h3>
+							<p>Leg kicks that can chop down trees!</p>
+						</a>
+					</li>
+					<li>
+						<a href="#topCapo">
+						<img src="images/eddyG.png">
+							<h3>Capoeira Black Belts</h3>
+							<p>Looks like dancing but watch out for those moves!</p>
+						</a>
+					</li>
+					<li>
+						<a href="#topSambo">
+						<img src="images/fedor.png">
+							<h3>Sambo Black Belts</h3>
+							<p>The closest thing to brutal combat outside the octagon!</p>
+						</a>
+					</li>
 				</ul>
-			</div>
-			<div class="ui-grid-a">	
-				<div class="ui-block-a">
-					<ul data-role="listview" data-inset="true">
-						<li data-role="list-divider">
-							<a href="#topBjj">
-								<img src="images/buchecha.png" width="60" height="60">
-								<h3>Brazilian Jiu Jitsu Black Belts</h3>
-								<p>All the best players from the Mundials!</p>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="ui-block-b">
-					<ul data-role="listview" data-inset="true">
-						<li data-role="list-divider">
-							<a href="#topMt">
-							<img src="images/joseAldo.png" width="60" height="60">
-								<h3>Brazilian Muay Thai Black Belts</h3>
-								<p>Leg kicks that can chop down trees!</p>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="ui-grid-a">	
-				<div class="ui-block-a">
-					<ul data-role="listview" data-inset="true">
-						<li data-role="list-divider">
-							<a href="#topCapo">
-							<img src="images/eddyG.png" width="60" height="60">
-								<h3>Capoeira Black Belts</h3>
-								<p>Looks like dancing but watch out for those moves!</p>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="ui-block-b">
-					<ul data-role="listview" data-inset="true">
-						<li data-role="list-divider">
-							<a href="#topSambo">
-							<img src="images/fedor.png" width="60" height="60">
-								<h3>Sambo Black Belts</h3>
-								<p>The closest thing to brutal combat outside the octagon!</p>
-							</a>
-						</li>
-					</ul>
-				</div>
 			</div>
 		</div>
 		<div data-role="footer" data-position="fixed" data-id="home">
@@ -121,7 +101,7 @@
 		</div>
 		
 		<div data-role="content" >
-			<div>
+			<div data-role="collapsible-set">
 				<p>Here are your top Black Belts</p>
 				<div data-role="collapsible" data-theme="b">	
 					<h3>Marcus "Buchecha" Almeida</h3> 
@@ -190,7 +170,7 @@
 		</div>
 		
 		<div data-role="content" >
-			<div>
+			<div data-role="collapsible-set">
 				<p>Here are your top BJJ Black Belts</p>
 				<div data-role="collapsible" data-theme="b">	
 					<h3>Marcus "Buchecha" Almeida</h3> 
@@ -255,7 +235,7 @@
 		</div>
 		
 		<div data-role="content">
-			<div>
+			<div data-role="collapsible-set">
 				<p>Here are your top Muay Thai Faixa Preta (Black Belts)</p>
 				<div data-role="collapsible" data-theme="b">	
 					<h3>Jose Aldo</h3> 
@@ -317,7 +297,7 @@
 		</div>
 		
 		<div data-role="content" >
-			<div>
+			<div data-role="collapsible-set">
 				<p>Here are your top Capoeira Black Sash</p>
 				<div data-role="collapsible" data-theme="b">	
 					<h3>Eddy Gordo</h3> 
@@ -377,7 +357,7 @@
 		</div>
 		
 		<div data-role="content" >
-			<div>
+			<div data-role="collapsible-set">
 				<p>Here are your top Sambo Black Belts</p>
 				<div data-role="collapsible" data-theme="b">	
 					<h3>Fedor Emilianenko</h3> 
@@ -429,6 +409,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<div data-role="page" id="info" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed">
 			<h1>Info Page</h1>
@@ -437,9 +418,14 @@
 			<ul data-role="listview" data-inset="true">
 				<li>
 					<a href="index.html">
-						<img src="images/helio.png">
 						<h3>Gold App</h3>
 						<p>List Inlays</p>
+					</a>
+				</li>
+				<li>
+					<a href="Bronze/index.html">
+						<h3>Bronze App</h3>
+						<p>Grid view</p>
 					</a>
 				</li>
 			</ul>
@@ -454,6 +440,103 @@
 			</div>
 		</div>	
 	</div>
+	
+	<div data-role="dialog" id="blackbeltformerrors">
+		<div data-role="header" data-position="fixed">
+			<h1>Black Belt Loader: Missing Items</h1>
+		</div>
+		<div data-role="content">
+			<ul>
+				<li>Test.</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div data-role="page" id="addBlackbelt" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h3>Add Black Belt</h3>
+		</div>
+		<div data-role="content">
+			<form action="" method="post" id="addBlackbeltForm">
+				
+				<div data-role="fieldcontain">
+					<input type="submit" value="Add Black Belt!" data-theme="e"/>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="blackbeltname">Name:</label>
+					<input type="text" name="blackbeltname" id="blackbeltname" class="required"/>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="blackbeltbday">Birthdate:</label>
+					<input type="text" name="blackbeltbday" id="blackbeltbday" class="required date" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="blackbeltwins">Competitions Won:</label>
+					<input type="range" name="blackbeltwins" id="blackbeltwins" value="0" min="0" max="1000" />
+					
+				<div data-role="fieldcontain">
+					<label for="blackbeltchamp">Current Champion?</label>
+					<div>
+						<select data-role="slider" data-theme="e">
+							<option value="off">No</option>
+							<option value="on">Yes</option>
+						</select>
+					</div>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="martialart1">Form of martial arts:</label>
+					<select name="martialart1" id="martialart1" data-native-menu="false">
+					<option data-placeholder="true">Select Martial Arts Style</option>
+						<option value="bjj">Brazilian Jiu Jitsu</option>
+						<option value="thai">Brazilian Muay Thai</option>
+						<option value="capoeira">Capoeira</option>
+						<option value="sambo">Sambo</option>
+					</select>
+				</div>
+
+				
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>What style of fighter:</legend>
+						<input type="checkbox" value="standupbb" name="blackbeltstyle" id="blackbeltstyle1"/>
+						<label for="blackbeltstyle1">Standup</label>
+						<input type="checkbox" value="grapplingbb" name="blackbeltstyle" id="blackbeltstyle2"/>
+						<label for="blackbeltstyle2">Grappling</label>
+					</fieldset>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup">
+						<legend>Black Belt Level:</legend>
+						<input type="radio" value="Topbb" name="blackbeltlevel" id="blackbeltlevel1" class="required"/>
+						<label for="blackbeltlevel1">Top level</label>
+						<input type="radio" value="Averagebb" name="blackbeltlevel" id="blackbeltlevel2"/>
+						<label for="blackbeltlevel2">Average</label>
+						<input type="radio" value="99centbb" name="blackbeltlevel" id="blackbeltlevel3"/>
+						<label for="blackbeltlevel3">99 cent black belt</label>
+					</fieldset>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="blackbeltdescrip">Background Info</label>
+					<textarea></textarea>
+				</div>
+				
+				<div>	
+					<input type="reset" value="Reset" data-theme="a"/>
+				</div>
+				
+				<a href="#blackbeltformerrors" id="bbformerrors" data-rel="dialog">Open errors</a>
+				
+			</form>
+		</div>
+	</div>
+	
+	
 
 
 
@@ -464,6 +547,7 @@
 	<!-- JavaScript under here -->
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+		<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<!---<script type="text/javascript" src="js/json.js"></script>--->
 		

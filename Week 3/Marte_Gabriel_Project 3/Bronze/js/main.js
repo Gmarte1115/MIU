@@ -87,7 +87,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		switchControls("on");
 		if(localStorage.length === 0){
 			testData();
-			alert("No Contacts, test data loaded.");	
+			alert("No profiles, test data loaded.");	
 		}
 		var createDiv = document.createElement("div");
 		createDiv.setAttribute("id", "items");
@@ -127,7 +127,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	function testData(){
 		var json = {
 			"contact01": {
-				"group": ["Group:", "Personal"],
+				"group": ["Group:", "Top Rank"],
 				"fname": ["First Name:", "Gabriel"],
 				"lname": ["Last Name:", "Marte"],
 				"pnum":  ["Phone Number:", "9175553011"],
@@ -135,10 +135,10 @@ window.addEventListener("DOMContentLoaded", function(){
 				"vip": 	 ["Is a VIP:", "No"],
 				"sex":   ["Sex:", "Male"],
 				"bday":  ["Birthday:", "11-15-1983"],
-				"notes": ["Notes:", "First contact saved"]
+				"style": ["Style:", "Muay Thai"]
 			},
 			"contact02": {
-				"group": ["Group:", "Work"],
+				"group": ["Group:", "Top Rank"],
 				"fname": ["First Name:", "Yomaly"],
 				"lname": ["Last Name:", "Decruz"],
 				"pnum":  ["Phone Number:", "9175550011"],
@@ -146,7 +146,7 @@ window.addEventListener("DOMContentLoaded", function(){
 				"vip": 	 ["Is a VIP:", "Yes"],
 				"sex":   ["Sex:", "Female"],
 				"bday":  ["Birthday:", "12-09-1983"],
-				"notes": ["Notes:", "Second contact saved"]
+				"style": ["Style:", "Brazilian Jiu Jitsu"]
 			}
 		}
 		for(var n in json){
@@ -272,29 +272,29 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	
 	function delConItem(){
-		var ask = confirm("You are about to delete this contact, click ok to continue");
+		var ask = confirm("You are about to delete this black belt, click ok to continue");
 		if(ask){
 			localStorage.removeItem(this.key);
-			alert("Contact was deleted.");
+			alert("This black belt was deleted.");
 			window.location.reload();
 		}else{
-			alert("Contact was not deleted.");
+			alert("This black belt was not deleted.");
 		}
 	}
 	
 	function clearLocalData(){
 		if(localStorage.lenth === 0){
-			alert("No contacts to delete!");
+			alert("No black belts to delete!");
 		}else{
 			localStorage.clear();
-			alert("All contacts deleted!");
+			alert("All black belts deleted!");
 			window.location.reload();
 			return false;
 		}
 	}
 	
-	var listGroups = ["-Choose contact group-", "Personal", "Work", "Acquaintance"],
-		sexValue
+	var listGroups = ["-Choose martial arts style-", "Stand-up fighter", "Ground fighter", "Weapons Specialist"],
+		sexValue,
 		vipValue = "No",
 		errorCheck = $("errors");
 	;

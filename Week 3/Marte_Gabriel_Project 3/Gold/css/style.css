@@ -1,0 +1,9 @@
+label.error{
+	display: block;
+	margin: 15px 0px;
+	color: #f31313;
+	}
+	
+#bbformerrors{
+	display: none;
+}
