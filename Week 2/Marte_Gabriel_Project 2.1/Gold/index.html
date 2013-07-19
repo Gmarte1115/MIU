@@ -26,15 +26,21 @@
 	<script src="js/libs/modernizr.custom.min.js"></script>
 
 </head>
-<body>
+<body>	
+	
 	<div data-role="page" id="home">
+		<div data-role="fieldcontain">
+		    <label for="search-2"></label>
+		    <center><input type="search" name="search-2" id="search-2" value="" /></center>
+    	</div>
 		<div data-role="header" data-position="fixed">
 			<h1>Jiu Jitsu Gamer</h1>
 		</div>
 		<div>
-			<center><img src="images/BBcta.jpg"></center>
+			<center><img src="images/JJGLogoSm.png"></center>
 		</div>
-		<div data-role="content">
+		
+			<div data-role="content">
 			<div>
 				<ul data-role="listview" data-inset="true">					
 					<li>
@@ -44,72 +50,50 @@
 					</li>
 				</ul>
 			</div>	
-			<div class="ui-grid-a">	
-				<div class="ui-block-a">
-					<ul data-role="listview" data-inset="true">
-						<li data-role="list-divider">
+			<div>
+				<ul data-role="listview" data-inset="true">
+					<li>
 						<a href="#platformers">
-							<img src="images/helio.png" width="60" height="60">
+							<img src="images/mbplat.png">
 							<h3>Platformers</h3>
 							<p>Love 2d graphics and 8-bit soundtracks?</p>
 						</a>
-						</li>
-					</ul>
-				</div>
-				<div class="ui-block-b">
-					<ul data-role="listview" data-inset="true">
-						<li data-role="list-divider">
+					</li>
+					<li>
 						<a href="#adventure">
-							<img src="images/buchecha.png" width="60" height="60">
+							<img src="images/zeldaadven.jpg">
 							<h3>Adventure Games</h3>
 							<p>Discovery is what it's all about!</p>
 						</a>
-						</li>
-					</ul>
-				</div>
-			</div>			
-			<div class="ui-grid-a">	
-				<div class="ui-block-a">
-					<ul data-role="listview" data-inset="true">
-						<li data-role="list-divider">
+					</li>
+					<li>
 						<a href="#fps">
-						<img src="images/joseAldo.png" width="60" height="60">
+						<img src="images/halofps.jpg">
 							<h3>FPS's</h3>
 							<p>If you dont know what it is, select another tab...</p>
 						</a>
-					</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="ui-block-b">
-					<ul data-role="listview" data-inset="true">
-						<li data-role="list-divider">
+					</li>
+					<li>
 						<a href="#fighters">
-						<img src="images/eddyG.png" width="60" height="60">
+						<img src="images/sffighters.jpg">
 							<h3>Fighting Games</h3>
 							<p>Jab Jab -> Short Fierce = Raging Demon</p>
 						</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			
-				<ul data-role="listview" data-inset="true">
-					<li data-role="list-divider">
+					</li>
+					<li>
 						<a href="#rpg">
-						<img src="images/fedor.png" width="" height="60">
+						<img src="images/ff7rpg.jpg">
 							<h3>Role Playing Games</h3>
 							<p>So... you happen to have 80 hrs free this week...</p>
 						</a>
 					</li>
 				</ul>
-				
+			</div>
 		</div>
 		<div data-role="footer" data-position="fixed" data-id="home">
 				<div data-role="navbar">
 					<ul>
-						<li><a href="#newsFeed" data-icon="bars">News Feed</a></li>
+						<li><a href="#apps" data-icon="bars">Apps</a></li>
 						<li><a href="#info" data-icon="star">Info</a></li>
 						<li><a href="#home" data-icon="search">Home</a></li>
 					</ul>
@@ -121,9 +105,13 @@
 		<div data-role="header" data-position="fixed">
 			<h1>Top Platformers</h1>
 		</div>
+		<div data-role="fieldcontain">
+		    <label for="search-2"></label>
+		    <center><input type="search" name="search-2" id="search-2" value="" /></center>
+    	</div>
 		
-		<div data-role="content" >
-			<div>
+		<div data-role="content">
+			<div data-role="collapsible-set">
 				<p>If jumping around is your thing, play this:</p>
 				<div data-role="collapsible" data-theme="b">	
 					<h3>Super Mario Bros. Series</h3> 
@@ -192,9 +180,13 @@
 		<div data-role="header" data-position="fixed">
 			<h1>Treasures hunting, sword swinging adventure!</h1>
 		</div>
+		<div data-role="fieldcontain">
+		    <label for="search-2"></label>
+		    <center><input type="search" name="search-2" id="search-2" value="" /></center>
+    	</div>
 		
 		<div data-role="content" >
-			<div>
+			<div data-role="collapsible-set">
 				<p>Top Adventure Games</p>
 				<div data-role="collapsible" data-theme="b">	
 					<h3>Zelda</h3> 
@@ -258,9 +250,12 @@
 		<div data-role="header" data-position="fixed">
 			<h1>Shoot first, any questions?</h1>
 		</div>
-		
+		<div data-role="fieldcontain">
+		    <label for="search-2"></label>
+		    <center><input type="search" name="search-2" id="search-2" value="" /></center>
+    	</div>
 		<div data-role="content">
-			<div>
+			<div data-role="collapsible-set">
 				<p>Top First Person Shooters</p>
 				<div data-role="collapsible" data-theme="b">	
 					<h3>Halo</h3> 
@@ -320,9 +315,12 @@
 		<div data-role="header" data-position="fixed">
 			<h1>Who's the baddest of them all!</h1>
 		</div>
-		
+		<div data-role="fieldcontain">
+		    <label for="search-2"></label>
+		    <center><input type="search" name="search-2" id="search-2" value="" /></center>
+    	</div>
 		<div data-role="content" >
-			<div>
+			<div data-role="collapsible-set">
 				<p>Top Fighting Games</p>
 				<div data-role="collapsible" data-theme="b">	
 					<h3>Street Fighter</h3> 
@@ -380,9 +378,12 @@
 		<div data-role="header" data-position="fixed">
 			<h1>Role Playing Games</h1>
 		</div>
-		
+		<div data-role="fieldcontain">
+		    <label for="search-2"></label>
+		    <center><input type="search" name="search-2" id="search-2" value="" /></center>
+    	</div>
 		<div data-role="content" >
-			<div>
+			<div data-role="collapsible-set">
 				<p>Top RPG's</p>
 				<div data-role="collapsible" data-theme="b">	
 					<h3>Final Fantasy Series</h3> 
@@ -438,6 +439,36 @@
 		<div data-role="header" data-position="fixed">
 			<h1>Info Page</h1>
 		</div>
+		<div>
+			<center><img src="images/ClassyGamerapp.jpg"></center>
+		</div>
+		<ul>
+		<div data-role="content">
+				<div>
+				<li>
+					<h3>
+						<p>This app is here to help those of the Jiu Jitsu community gather and speak about the games we all love. Our goal is to merge the lifestyles of the Jiu Jitsu practicioner and the video game enthusiast. We hope you enjoy!
+							- Juggy
+						</p>
+					</h3>	
+				</li>
+				</div>
+		</div>
+		</ul>
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#apps" data-icon="bars">Apps</a></li>
+					<li><a href="#info" data-icon="star">Info</a></li>
+					<li><a href="#home" data-icon="search">Home</a></li>
+				</ul>		
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="apps" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>Additional Apps</h1>
+		</div>
 		<div data-role="content">
 			<ul data-role="listview" data-inset="true">
 				<li>
@@ -457,7 +488,7 @@
 		<div data-role="footer" data-position="fixed" data-id="home">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#newsFeed" data-icon="bars">News Feed</a></li>
+					<li><a href="#apps" data-icon="bars">Apps</a></li>
 					<li><a href="#info" data-icon="star">Info</a></li>
 					<li><a href="#home" data-icon="search">Home</a></li>
 				</ul>		
